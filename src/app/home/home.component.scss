@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+/*@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');*/
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+
+.svcf-maincontent{ width: 100%; position: absolute; left: 0px; top: 0px;}
+.svcf-maincontent .container{ max-width:1000px; margin: auto; float: none;}
+.svcf-menu {background-color: #273748; font-family: 'Ubuntu', sans-serif;}
+.svcf-content{background-color: #ffffff; font-family: 'Ubuntu', sans-serif; }
+.svcf-copyright{background-color: #273748; color:#c2d1e3; font-family: 'Ubuntu', sans-serif; text-align: center; font-size: 14px; margin: 0px -15px; line-height: 40px;}
+
+.welcome{ width: 100%; text-align: center; font-size: 30px; line-height: 180px;}
+
+.chit-header{background-color:#fff;height:64px;position:fixed;top:0;right:0;left:0;width:100%;box-shadow:0 1px 2px #999;z-index:999}
+.chit-navigation{position:fixed; background-color:#46a29f;width:201px;border:thin solid #c4c4c4;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;height:100%;bottom:0;left:0;top:0}
+.chit-maincontent{text-align:center;position:absolute;left:203px;top:60px;bottom:0;right:3px;background-color:#ebeff2;overflow-y:auto}

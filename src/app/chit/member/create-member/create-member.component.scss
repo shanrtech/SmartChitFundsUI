@@ -1,0 +1,9 @@
+.tabsNavtitle { text-align:left; background-color: #ffffff; margin: 0 auto; padding: 0px 15px; margin-top: 10px; font-size: 18px; line-height: 40px; font-weight: 600; font-family: 'Ubuntu', sans-serif;}
+.chit-create-tbl{ font-family: 'Ubuntu', sans-serif; margin:auto; background-color: #FFFFFF;padding: 25px 15px;border: 1px solid #e0e0e0; margin: 0px 15px 15px;}
+.chit-create-tbl .col-sm-5{ text-align: right;}
+.chit-create-tbl .col-sm-7{ text-align: left;}
+.chit-create-tbl .col-sm-7 select,.chit-create-tbl .col-sm-7 input[type="text"]{width: 60%; background-color: #FFFFFF; border-radius: 6px; padding: 5px 8px; border: 1px solid #e0e0e0; margin-bottom: 10px;}
+.chit-create-tbl .col-sm-7 input[type="submit"]{ background-color: #5190c3; padding:6px 25px; border-radius: 5px; border:0px; color:#ffffff; font-size: 14px;}
+@media (max-width:768px) {
+.chit-create-tbl .col-sm-5{ text-align: left; padding-bottom: 10px;}
+}

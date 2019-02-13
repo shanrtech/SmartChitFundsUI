@@ -1,0 +1,13 @@
+.chit-login{ width:100%;}
+.chit-welcome{width:calc(100% - 560px); background-repeat:no-repeat;background-size:cover;background-position:center;position:relative;z-index:1;/* background-image: url("./assets/img/royality.jpg");*/}
+.chit-welcome::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.1);
+}

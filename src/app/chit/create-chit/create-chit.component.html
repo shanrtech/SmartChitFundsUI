@@ -1,0 +1,60 @@
+<div class="tabsNavtitle"> Create Chit</div>
+
+<div class="chit-create-tbl">
+
+    <form [formGroup]="chitForm" novalidate>
+
+        <div class="inputWithIcon">
+
+            <div class="row">
+                <div class="col-sm-5">Name :</div>
+                <div class="col-sm-7"><input type="text" formControlName="name" placeholder="Enter Name"></div>
+
+            </div>
+
+        </div>
+
+        <div class="inputWithIcon">
+            <div class="row">
+                <div class="col-sm-5">Start Date :</div>
+                <div class="col-sm-7"><input type="text" formControlName="startDate" placeholder="Enter Date"></div>
+            </div>
+
+        </div>
+
+
+        <div class="inputWithIcon">
+            <div class="row">
+                <div class="col-sm-5">Period :</div>
+                <div class="col-sm-7">
+                    <select formControlName="period.id" style="margin-top: 10px">
+                        <option>Select</option>
+                        <option *ngFor="let period of periods" [ngValue]="period.id">{{ period.name }}</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="inputWithIcon">
+
+            <div class="row">
+                <div class="col-sm-5">Amount :</div>
+
+                <div class="col-sm-7">
+                    <input type="text" formControlName="amount" placeholder="Enter Amount">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-sm-5"></div>
+            <div class="col-sm-7"> <button type="button" class="btn btn-primary" (click)="createChit()"> Submit</button>
+            </div>
+        </div>
+
+    </form>
+
+</div>

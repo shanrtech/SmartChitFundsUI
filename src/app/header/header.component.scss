@@ -1,0 +1,13 @@
+.chit-logo img{ margin: 5px 0px;}
+.chit-logo{ width:50%; float: left;}
+.chit-profileset{width:45%; font-size: 15px; float: right; color:#ffffff; text-align: right; padding-top:35px; padding-right:5px; font-family: 'Ubuntu', sans-serif;}
+.chit-profileset a{background-color: #8e9dae;color: #FFF;text-decoration: none;padding: 8px 15px 8px 25px;}
+.chit-profileset span{padding-right:20px;}
+.chit-profileset i{ font-size: 22px; position: absolute; }
+.welcomeusername{ padding-left: 25px;}
+.chitlogoutuser{ padding-left: 25px;}
+
+@media (max-width:700px) {
+.chit-logo{width:100%; text-align: center;}
+.chit-profileset{width:100%; text-align: center; padding-top:5px; padding-bottom: 10px;}
+}

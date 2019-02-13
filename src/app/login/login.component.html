@@ -1,0 +1,39 @@
+<div class="svcf-maincontent">
+    <div class="smart-chit-logo"><img src="/assets/img/logo.png" /></div>
+    <div class="smart-chit-login">
+        <tabset>
+            <tab heading="Login">
+                <form [formGroup]="loginForm" novalidate>
+                    <div class="inputWithIcon">
+                        <input type="text" formControlName="email" placeholder="Enter Your Username">
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <div class="inputWithIcon">
+                        <input type="password" formControlName="password" placeholder="Enter Your Password">
+                        <i class="fa fa-unlock"></i>
+                    </div>
+                    <div class="smart-login-btn">
+                        <button type="button" class="btn btn-primary" (click)="login()"> <i class="fa fa-key"></i>
+                            Login</button>
+                    </div>
+                </form>
+
+            </tab>
+            <tab heading="Register">
+                <form [formGroup]="registrationForm" novalidate>
+                    <div class="inputWithIcon">
+                        <input type="text" formControlName="email" placeholder="Email">
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <div class="inputWithIcon">
+                        <input type="password" formControlName="password" placeholder="Password">
+                        <i class="fa fa-unlock-alt"></i>
+                    </div>
+                    <div class="smart-login-btn">
+                        <button type="button" class="btn btn-primary" (click)="register()"> <i class="fa fa-key"></i>Register</button>
+                    </div>
+                </form>
+            </tab>
+        </tabset>
+    </div>
+</div>

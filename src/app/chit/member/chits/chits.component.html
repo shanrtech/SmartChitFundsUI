@@ -1,0 +1,26 @@
+<div class="tabsNavtitle">View All Chits</div>
+
+<table class="table smart-tbl">
+    <thead class="thead-dark">
+        <tr>
+            <th>S.No</th>
+            <th>Chit Name </th>
+            <th>Start Date </th>
+            <th>Period </th>
+            <th>Amount</th>
+            <th>Manager Name</th>
+            <th>Bid / Auction</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let chit of chits">
+            <td>{{chit.id}}</td>
+            <td>{{chit.name}}</td>
+            <td>{{chit.startDate}}</td>
+            <td>{{chit.period}}</td>
+            <td>{{chit.amount}}</td>
+            <td>{{chit.manager}}</td>
+            <td><a routerLink="/bids" ><i class="fa fa-file"></i></a></td>
+        </tr>
+    </tbody>
+</table>

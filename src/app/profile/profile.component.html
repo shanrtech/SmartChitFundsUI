@@ -1,0 +1,82 @@
+<app-message [status]="status" [item]="item"></app-message>
+
+<div class="tabsNavtitle"> Profile</div>
+
+<div class="chit-create-tbl">
+
+    <form [formGroup]="fromProfile" novalidate>
+
+
+        <div class="inputWithIcon">
+            <div class="row">
+                <div class="col-sm-5">First Name :</div>
+                <div class="col-sm-7"><input type="text" formControlName="firstname" placeholder="Enter First Name" /></div>
+            </div>
+
+        </div>
+
+        <div class="inputWithIcon">
+            <div class="row">
+                <div class="col-sm-5">Last Name :</div>
+                <div class="col-sm-7"><input type="text" formControlName="lastname" placeholder="Enter Last Name" /></div>
+            </div>
+        </div>
+
+        <div class="inputWithIcon">
+            <div class="row">
+                <div class="col-sm-5">eMail :</div>
+                <div class="col-sm-7"><input type="text" formControlName="email" placeholder="Enter eMail" /></div>
+            </div>
+        </div>
+
+        <div class="inputWithIcon">
+            <div class="row">
+                <div class="col-sm-5">Phone Number :</div>
+                <div class="col-sm-7"><input type="text" formControlName="mobile" placeholder="Enter Phone Number" /></div>
+            </div>
+        </div>
+
+        <div class="inputWithIcon">
+            <div class="row">
+                <div class="col-sm-5">Date of Birth :</div>
+                <div class="col-sm-7"><input type="text" formControlName="dateOfBirth" placeholder="Select Date of Birth" /></div>
+            </div>
+        </div>
+
+        <div class="inputWithIcon">
+            <div class="row gendertypes">
+                <div class="col-sm-5">Gender :</div>
+                <div class="col-sm-7"><input type="radio" formControlName="gender" name="gender" /> Male <input type="radio" formControlName="gender" name="gender" /> Female </div>
+            </div>
+        </div>
+
+        <div class="inputWithIcon">
+            <div class="row">
+                <div class="col-sm-5">Address 1 :</div>
+                <div class="col-sm-7"><input type="text" formControlName="address1" placeholder="Enter Address 1" /></div>
+            </div>
+        </div>
+
+        <div class="inputWithIcon">
+            <div class="row">
+                <div class="col-sm-5">Address 2 :</div>
+                <div class="col-sm-7"><input type="text" formControlName="address2" placeholder="Enter Address 2" /></div>
+            </div>
+        </div>
+
+        <div class="inputWithIcon">
+            <div class="row">
+                <div class="col-sm-5">Zipcode :</div>
+                <div class="col-sm-7"><input type="text" formControlName="pinCode" placeholder="Enter Zipcode" /></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-5"></div>
+            <div class="col-sm-7"> <input type="submit" (click)="saveProfile()" value="Submit" /> </div>
+        </div>
+
+
+    </form>
+
+</div>

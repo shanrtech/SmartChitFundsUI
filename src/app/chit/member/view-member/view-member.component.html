@@ -1,0 +1,29 @@
+<div class="tabsNavtitle">View All Members</div>
+
+<table class="table smart-tbl">
+    <thead class="thead-dark">
+        <tr>
+            <th>S.No</th>
+            <th>Name </th>
+            <th>Start Date </th>
+            <th>Period </th>
+            <th>Amount</th>
+            <th>Bid / Auction</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let member of members ">
+            <td>{{member.id}}</td>
+            <td>{{member.firstname}}</td>
+            <td>{{member.lastname}}</td>
+            <td>{{member.email}}</td>
+            <td>{{member.amount}}</td>
+            <td><a routerLink="/bids"><i class="fa fa-file"></i></a></td>
+            <td>
+                <button (click)="edit(member.id)"> <i class=" fa fa-edit "></i></button> </td>
+            <td><i class="fa fa-trash "></i></td>
+        </tr>
+    </tbody>
+</table>

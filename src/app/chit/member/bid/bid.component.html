@@ -1,0 +1,56 @@
+<div class="tabsNavtitle"> Bid Chit</div>
+<div class="row">
+    <div class="col-sm-6">
+        <div class="chit-create-tbl">
+
+            <form [formGroup]="bidDeatils" novalidate>
+
+                <div class="inputWithIcon">
+                    <div class="row">
+                        <div class="col-sm-5">Amount:</div>
+                        <div class="col-sm-7"><input type="text" formControlName="bid_amount" placeholder="Enter First Name" /></div>
+                    </div>
+                </div>
+
+                <div class="inputWithIcon">
+                    <div class="row">
+                        <div class="col-sm-5">Bid Amount :</div>
+                        <div class="col-sm-7"><input type="text" formControlName="remain_amount" placeholder="Enter Last Name" /></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5"><input type="submit" (click)="bidDetails()" value="Bid" /> </div>
+                    <div class="col-sm-7"> <input type="submit" value="Calculate Interest Rate" /> </div>
+                </div>
+
+            </form>
+
+
+
+        </div>
+    </div>
+    <div class="col-sm-6 bidtbl">
+
+        <table class="table smart-tbl">
+            <thead class="thead-dark">
+                <tr>
+                    <th>S.No</th>
+                    <th>Bid Amount </th>
+                    <th>Interest Per 100 </th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let bid of bids">
+                    <td>{{bid.id}}</td>
+                    <td>{{bid.bidamount}}</td>
+                    <td>{{bid.interest}}</td>
+                    <td><i class="fa fa-edit"></i></td>
+                    <td><i class="fa fa-trash"></i></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

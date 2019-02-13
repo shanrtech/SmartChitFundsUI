@@ -1,0 +1,9 @@
+.member-tbl{ background-color: #03d0cc;}
+.member-tbl ul{ margin-left: 0px; padding-left: 0px;}
+.member-tbl li{ border-bottom: 1px solid #ffffff; line-height: 35px;}
+.member-tbl li,.member-tbl li a{ list-style: none; color: #ffffff;}
+.member-tbl li a{ padding-left: 15px; text-transform: uppercase;}
+.member-tbl li a:hover{ text-decoration: none;}
+.members-head-tbl .row {display: flex;}
+.members-head-tbl .col {flex: 1;}
+.members-head-tbl .col-sm-2{ margin-left: 15px; padding: 0px;}

@@ -1,0 +1,28 @@
+<div class="tabsNavtitle">View All Chits</div>
+
+<table class="table smart-tbl">
+    <thead class="thead-dark">
+        <tr>
+            <th>S.No</th>
+            <th>Name </th>
+            <th>Start Date </th>
+            <th>Period </th>
+            <th>Amount</th>
+            <th>View Member</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let chit of chits">
+            <td>{{chit.id}}</td>
+            <td>{{chit.name}}</td>
+            <td>{{chit.startDate}}</td>
+            <td>{{chit.period.name}}</td>
+            <td>{{chit.amount}}</td>
+            <td><a [routerLink]="['/layout/members/viewMember',chit.id]"><i class="fa fa-file"></i></a></td>
+            <td><i class="fa fa-edit"></i></td>
+            <td><button (click)="delete(chit.id)"><i class="fa fa-trash"></i></button></td>
+        </tr>
+    </tbody>
+</table>

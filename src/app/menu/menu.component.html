@@ -1,0 +1,24 @@
+  <div class="nav">
+    <div class="nav-header">
+      <div class="nav-title">
+        Menu
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+
+    <div class="nav-links">
+      <ul><a href="#">
+        <li *ngFor="let item of items">  
+            <a routerLink="/{{item.routerLink}}" >{{item.item}}</a>
+        </li></a>
+      </ul>
+    </div>
+  </div>
+ 
+  
