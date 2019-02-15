@@ -34,7 +34,7 @@ export class CreateMemberComponent implements OnInit {
       address1 :[],
       address2 :[],
       pinCode :[]
-
+      
 
     });
 

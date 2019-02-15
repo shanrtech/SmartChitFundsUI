@@ -15,4 +15,5 @@ export class User {
     createdDate: Date;
     updatedBy: string;
     updatedDate: Date;
+    
 }

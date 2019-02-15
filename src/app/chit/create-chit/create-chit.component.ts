@@ -28,7 +28,11 @@ export class CreateChitComponent implements OnInit {
       name: [],
       startDate: [],
       amount: [],
-      period: []
+      period: [],
+      commissionRupess :[],
+      manager :[],
+      commission :[]
+
     });
 
     this.scfService.getPeriods().subscribe(data => {
@@ -58,4 +62,7 @@ export class CreateChitComponent implements OnInit {
 
   }
 
+}
+export class NgIfComponent {
+  show = false;
 }

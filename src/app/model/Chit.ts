@@ -10,4 +10,7 @@ export class Chit {
     periodId: number;
     amount : number;
     user   :User;
+    commissionRupess :number;
+    manager :boolean;
+    commission :boolean;
 }

@@ -49,6 +49,29 @@
 
         </div>
 
+        <div class="inputWithIcon">
+            <div class="row gendertypes">
+                <div class="col-sm-5">Manager :</div>
+                <div class="col-sm-7"><input type="checkbox" formControlName="manager" name="manager" /></div>
+            </div>
+        </div>
+
+        <div class="inputWithIcon">
+            <div class="row gendertypes">
+                <div class="col-sm-5">Commission :</div>
+                <div class="col-sm-7"><input (click)="show=!show" type="checkbox" formControlName="commission" name="commission" /></div>
+            </div>
+        </div>
+
+        <div *ngIf="show">
+            <div class="inputWithIcon">
+                <div class="row">
+                    <div class="col-sm-5">Commission In Rupess :</div>
+                    <div class="col-sm-7"><input type="text" formControlName="commissionRupess" placeholder="Enter Commission In Rupess" /></div>
+                </div>
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-sm-5"></div>
             <div class="col-sm-7"> <button type="button" class="btn btn-primary" (click)="createChit()"> Submit</button>

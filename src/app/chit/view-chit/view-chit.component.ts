@@ -20,7 +20,6 @@ export class ViewChitComponent implements OnInit {
   ngOnInit() {
 
     let userId = localStorage.getItem("user-id");
-
     console.log("userid:" + userId);
     this.scfService.getChitData(userId).subscribe(data => {
       this.chits = data;
@@ -31,10 +30,15 @@ export class ViewChitComponent implements OnInit {
 
   delete(id){
     console.log(id +"delete id")
-
     this.scfService.deleteChitData(id).subscribe(data =>{
    console.log(data)
     });
   }
+
+
+  start(id){
+  console.log(id+"id...")
+  }
+
 
 }
