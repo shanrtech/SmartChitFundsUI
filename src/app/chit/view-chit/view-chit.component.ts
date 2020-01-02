@@ -24,6 +24,7 @@ export class ViewChitComponent implements OnInit {
     this.scfService.getChitData(userId).subscribe(data => {
       this.chits = data;
       console.log(JSON.stringify(this.chits));
+      console.log(JSON.stringify(this.chits));
     });
   }
 
